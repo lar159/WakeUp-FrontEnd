@@ -1,7 +1,7 @@
 import './NavBar.css'
 import logoNav from "../../../assets/Screenshot_149-removebg-preview.png";
 import { AiOutlineUserAdd, AiOutlineUser } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <Link className="navbar-brand" href="/home"><img className='logoNav' src={logoNav} alt="Logo" />WakeUp!</Link>
+        <Link className="navbar-brand" to="/home"><img className='logoNav' src={logoNav} alt="Logo" />WakeUp!</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,24 +26,24 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto text-center">
             <li className="nav-item mx-3 listNav">
-              <Link className="nav-link active" aria-current="page" href="/">
+              <NavLink className="nav-link active" aria-current="page" to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item listNav">
-              <Link className="nav-link active mx-4" href="/menu">
+              <NavLink className="nav-link active mx-4" to="/menu">
                 Menu
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item listNav">
-              <Link className="nav-link active mx-4" href="#">
+              <NavLink className="nav-link active mx-4" to="/aboutUs">
                 About us
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item listNav">
-              <Link className="nav-link active mx-4" href="#">
+              <NavLink className="nav-link active mx-4" to="/contact">
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <div className="d-flex justify-content-center align-items-center">
