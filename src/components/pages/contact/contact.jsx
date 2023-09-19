@@ -1,9 +1,9 @@
 import React from 'react';
-import './contacto.css';
+import './contact.css';
 
-function Contacto() {
+function Contact() {
   return (
-    <div id="contacto">
+    <div id="contact">
       <section className="bg-gradient pb-5 pt-3 pt-lg-5 mb-1">
         <div className="container">
           <div className="row align-items-center">
@@ -47,4 +47,4 @@ function Contacto() {
   );
 }
 
-export default Contacto;
+export default Contact;
