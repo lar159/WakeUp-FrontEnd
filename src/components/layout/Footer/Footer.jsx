@@ -5,6 +5,7 @@ import { BiHomeAlt2, BiInfoCircle } from 'react-icons/bi';
 import { BsTelephone } from 'react-icons/bs';
 import { AiOutlineHeart } from "react-icons/ai";
 import './Footer.css';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,16 +27,16 @@ const Footer = () => {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase mb-3 font-weight-bold ">Products</h6>
               <p>
-                <a className="text-black text-decoration-none">Coffe</a>
+                <Link className="text-black text-decoration-none">Coffe</Link>
               </p>
               <p>
-                <a className="text-black text-decoration-none">Croassaints</a>
+                <Link className="text-black text-decoration-none">Croassaints</Link>
               </p>
               <p>
-                <a className="text-black text-decoration-none">Cakes</a>
+                <Link className="text-black text-decoration-none">Cakes</Link>
               </p>
               <p>
-                <a className="text-black text-decoration-none">Sandwiches</a>
+                <Link className="text-black text-decoration-none">Sandwiches</Link>
               </p>
             </div>
 
@@ -46,16 +47,16 @@ const Footer = () => {
                 Creators
               </h6>
               <p>
-                <a className="text-black text-decoration-none"><AiOutlineHeart /> Agus Dominguez</a>
+                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Agus Dominguez</Link>
               </p>
               <p>
-                <a className="text-black text-decoration-none"><AiOutlineHeart /> Lu Rivadeneira</a>
+                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Lu Rivadeneira</Link>
               </p>
               <p>
-                <a className="text-black text-decoration-none"><AiOutlineHeart /> Ian Figueroa</a>
+                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Ian Figueroa</Link>
               </p>
               <p>
-                <a className="text-black text-decoration-none"><AiOutlineHeart /> Gus Andina</a>
+                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Gus Andina</Link>
               </p>
             </div>
 
@@ -77,52 +78,52 @@ const Footer = () => {
             <div className="col-md-7 col-lg-8 text-center text-md-start">
               <div className="p-2">
                 © 2023 Copyright:
-                <a className="text-black text-decoration-none">
+                <Link className="text-black text-decoration-none">
                   HelloWorldCompany
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-              <a
+              <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
               >
                 <FaFacebookF />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
               >
                 <FaXTwitter />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
               >
                 <FaGoogle />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
               >
                 <FaInstagram />
-              </a>
-              <a
+              </Link>
+              <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
               >
                 <FaLinkedinIn />
-              </a>
-              <a
+              </Link>
+              <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
               >
                 <FiGithub />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
