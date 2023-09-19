@@ -1,7 +1,7 @@
 import './NavBar.css'
 import logoNav from "../../../assets/Screenshot_149-removebg-preview.png";
 import { AiOutlineUserAdd, AiOutlineUser } from 'react-icons/ai'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
 
