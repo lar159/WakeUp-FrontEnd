@@ -55,15 +55,15 @@ function Home() {
             <div className="d-flex flex-column align-items-center">
               <h3 className="ourHistory ">Our history</h3>
               <h6>
-                Behind every cup of coffee and every smile we offer, there is a
+                Behind every cup of coffee and every smile we offer, there is Link
                 passionate and dedicated team working tirelessly to give you the
                 best experience possible. From our talented baristas to our
                 friendly service staff, we all share a common commitment: making
                 your visit to WakeUp! be exceptional.
               </h6>
-              <a className="btnhistory" href="">
+              <Link className="btnhistory" href="">
                 know us{" "}
-              </a>
+              </Link>
             </div>
           </Col>
           <Col
@@ -137,12 +137,12 @@ function Home() {
                   <p className="card-text">
                     Try the best coffees with the same premium quality as always
                   </p>
-                  <a
+                  <Link
                     href="/menu"
                     className="btn btn-primary d-flex justify-content-center "
                   >
                     See menu
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -158,12 +158,12 @@ function Home() {
                   <p className="card-text">
                     The Best fresh drinks juices and tea. Limited edition juices
                   </p>
-                  <a
+                  <Link
                     href="/menu"
                     className="btn btn-primary d-flex justify-content-center"
                   >
                     See menu
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -179,13 +179,13 @@ function Home() {
                   <p className="card-text">
                     Fresh snacks of the day to accompany your drink
                   </p>
-                  <a
+                  <Link
                     href="/menu"
                     className="btn btn-primary d-flex justify-content-center"
                   >
                     {" "}
                     See menu
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Col>
