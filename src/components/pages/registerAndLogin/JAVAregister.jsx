@@ -13,7 +13,6 @@ const JAVAregister = () => {
     const [errorMessageApellido, setErrorMessageApellido] = useState()
     const [errorMessageEmail, setErrorMessageEmail] = useState()
     const [errorMessagePassword, setErrorMessagePassword] = useState()
-    // let validacionContrasena = ""
 
     const handleClick = (e)=>{
         e.preventDefault();
@@ -45,25 +44,24 @@ const JAVAregister = () => {
             setErrorMessageEmail("")
         }
 
+        console.log(infForm.password.length)
+
         if(infForm.password.length === 0){
             setErrorMessagePassword("El campo no puede permanecer vacío.")
         }else{
             if(infForm.password.length < 8){
-                validacionContrasena += "- Debe tener más de 8 caracteres. <br/>"
+                validacionContrasena += "- Debe tener más de 8 caracteres."
                 valida = false
-                // validoEnContrasena = false
             }
     
             if(!infForm.password.match(/[A-Z]/)){
-                validacionContrasena += "- Debe tener al menos una letra mayúscula. <br/>"
+                validacionContrasena += "- Debe tener al menos una letra mayúscula."
                 valida = false
-                // validoEnContrasena = false
             }
     
             if(!infForm.password.match(/[0-9]/)){
-                validacionContrasena += "- Debe tener al menos un número. <br/>"
+                validacionContrasena += "- Debe tener al menos un número."
                 valida = false
-                // validoEnContrasena = false
             }
 
             if(valida){
@@ -92,7 +90,7 @@ const JAVAregister = () => {
                         <div className="mb-3">
                             <label>Nombre</label>
                             <input type="text" className="form-control" aria-describedby="Nombre" placeholder="Nombre/s"  id="nombreUsuario" onChange={(e) =>  setInfForm({...infForm, nombre:e.target.value})}/>
-                            <p>{errorMessageNombre}</p>
+                            <p className="text-warning font-monospace fs-6">{errorMessageNombre}</p>
                         </div>
                     </div>
 
@@ -100,7 +98,7 @@ const JAVAregister = () => {
                         <div className="mb-3">
                             <label>Apellido</label>
                             <input type="text" className="form-control" aria-describedby="Apellido" placeholder="Apellido/s" id="apellidoUsuario" onChange={(e) =>  setInfForm({...infForm, apellido:e.target.value})}/>
-                            <p>{errorMessageApellido}</p>
+                            <p className="text-warning font-monospace fs-6">{errorMessageApellido}</p>
                         </div>
                     </div>
 
@@ -108,7 +106,7 @@ const JAVAregister = () => {
                         <div className="mb-3">
                             <label>Dirección de email</label>
                             <input type="email" className="form-control" aria-describedby="Email de usuario" placeholder="Email" id="emailUsuario" onChange={(e) =>  setInfForm({...infForm, email:e.target.value})}/>
-                            <p>{errorMessageEmail}</p>
+                            <p className="text-warning font-monospace fs-6">{errorMessageEmail}</p>
                         </div>
                     </div>
 
@@ -116,7 +114,7 @@ const JAVAregister = () => {
                         <div className="mb-3">
                             <label>Contraseña</label>
                             <input type="password" className="form-control" aria-describedby="Password" placeholder="Contraseña" id="passUsuario" onChange={(e) =>  setInfForm({...infForm, password:e.target.value})}/>
-                            <p>{errorMessagePassword}</p>
+                            <p className="text-warning font-monospace fs-6">{errorMessagePassword}</p>
                         </div>
                     </div>
 

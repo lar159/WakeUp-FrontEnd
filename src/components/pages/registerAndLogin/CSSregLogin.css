@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-.sign-in {
+/* .sign-in {
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -49,7 +49,7 @@
 .sign-up.active {
     opacity: 0;
     visibility: hidden;
-}
+} */
 
 .btn-primary {
     background-color: #4b3832;
