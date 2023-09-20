@@ -1,32 +1,36 @@
-const JAVAlogin = () => {
+import { useState } from "react";
 
+const JAVAlogin =({eventsBtn})=> {
+    const handleClick = (e)=>{
+        e.preventDefault(); 
+    }
 
-    return (
+    return(
         <div className="container-form sign-in">
 
             <div className="w-25 p-4 rounded bg-marron">
                 <form id="formLogin">
-                    <h2 className="text-light mb-3">Iniciar Sesion</h2>
+                    <h2 className="text-light mb-3">Log in</h2>
 
                     <div className="row">
                         <div className="mb-3">
-                            <label>Dirección de email</label>
-                            <input type="email" className="form-control" aria-describedby="Email de usuario" placeholder="Email" id="emailLogin" />
+                            <label>Email adress</label>
+                            <input type="email" className="form-control" aria-describedby="Email de usuario" placeholder="User's email address" id="emailLogin" />
                             <p id="alertaEmailLogin"></p>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="mb-3">
-                            <label>Contraseña</label>
-                            <input type="password" className="form-control" aria-describedby="Password" placeholder="Contraseña" id="passLogin" />
+                            <label>Password</label>
+                            <input type="password" className="form-control" aria-describedby="Password" placeholder="Password" id="passLogin" />
                             <p id="alertaPasswordLogin"></p>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className=" mt-3 d-flex justify-content-center">
-                            <button className="btn btn-outline-light" type="submit">Ingresar</button>
+                            <button className="btn btn-outline-light" type="submit" onClick={handleClick}>Enter</button>
                         </div>
                     </div>
 
@@ -35,9 +39,9 @@ const JAVAlogin = () => {
 
             <div className="welcome-back">
                 <div className="message">
-                    <h2 className="text-dark">¡Bienvenido nuevamente!</h2>
-                    <p className="text-dark">Si aún no tenés una cuenta, registrate acá</p>
-                    <button className="sign-in-btn btn btn-primary">Registrarse</button>
+                    <h2 className="text-dark fs-2">Welcome to WakeUp!</h2>
+                    <p className="text-dark fs-3">If you don't have an account yet, register here.</p>
+                    <button className="sign-in-btn btn btn-primary" onClick={()=> eventsBtn()}>Sign up</button>
                 </div>
             </div>
         </div>
