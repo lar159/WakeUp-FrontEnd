@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Menu.css";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const menuItems = [
   {
@@ -143,6 +143,8 @@ function Menu() {
     (category) => category.category === activeCategory
   )?.items;
 
+
+
   return (
     <div className="App colormenu">
       <header className="App-header">
@@ -198,6 +200,7 @@ function Menu() {
                               name="option"
                               id=""
                               className="select mt-2 m-4 "
+                            
                             >
                               <option value="">Select an option</option>
                               <option value="option">1</option>
