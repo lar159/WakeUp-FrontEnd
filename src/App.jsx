@@ -7,6 +7,9 @@ import Orders from "./components/pages/Orders/Orders"
 import Error404 from "./components/pages/Error404/Error404";
 import Menu from "./components/pages/Menu/Menu";
 import Dashboard from "./components/pages/AdminDashboard/Dashboard";
+import AboutUs from "./components/pages/AboutUs/AboutUs";
+import Contact from "./components/pages/Contact/Contact";
+
 
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
           <Route exact path="/menu" element={<Menu />} />
           <Route exact path="/aboutUs" element={<AboutUs />} />
           <Route exact path="/contact" element={<Contact />} />
+          
           
         </Routes>
         {isDashboardRoute ? <Outlet /> : <Footer />}

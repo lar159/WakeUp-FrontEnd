@@ -1,5 +1,7 @@
 import React from 'react';
 import './contact.css';
+import cafe from "../../../assets/cafe.jpg";
+
 
 function Contact() {
   return (
@@ -8,7 +10,7 @@ function Contact() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-3 mb-lg-0">
-              <img src="/Imagenes/cafe.jpg" className="img-fluid" alt="" />
+              <img src={cafe} className="img-fluid" alt="" />
             </div>
             <div className="col-lg-6">
               <h1 className="display-3 text-center">Where are we</h1>

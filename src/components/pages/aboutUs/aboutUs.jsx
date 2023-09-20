@@ -1,6 +1,12 @@
 import React from "react";
-import cafe from "../../../assets/cafeteria.jpg"
-const aboutUs = () => {
+import cafe from "../../../assets/cafeteria.jpg";
+import coffe from "../../../assets/icono_cafeteria.png";
+import coffe2 from "../../../assets/icono_factureria.png";
+import coffe3 from "../../../assets/icono_pan.png";
+import coffe4 from "../../../assets/icono_pasteleria.png"
+
+
+const AboutUs = () => {
   return (
     <>
       <section className="bg-gradient pb-5 pt-3 pt-lg-5 mb-1">
@@ -34,7 +40,7 @@ const aboutUs = () => {
         <div className="col">
           <div className="row align-items-center">
             <div className="col-sm-4 mb-3 mb-sm-0">
-              <img src="/Imagenes/iconocafeteria.png" className="img-fluid" alt="Bruja Escarlata" />
+              <img src={coffe} className="img-fluid" alt="" />
             </div>
             <div className="col-sm-8">
               <h3>Agustin Dominguez</h3>
@@ -44,7 +50,7 @@ const aboutUs = () => {
         <div className="col">
           <div className="row align-items-center">
             <div className="col-sm-4 mb-3 mb-sm-0">
-              <img src="/Imagenes/iconopasteleria.png" className="img-fluid" alt="BlackWidow" />
+              <img src={coffe2} className="img-fluid" alt="" />
             </div>
             <div className="col-sm-8">
               <h3>Lucia Rivadeneira</h3>
@@ -54,7 +60,7 @@ const aboutUs = () => {
         <div className="col">
           <div className="row align-items-center">
             <div className="col-sm-4 mb-3 mb-sm-0">
-              <img src="/Imagenes/iconopan.png" alt="Hombre Araña" className="img-fluid" />
+              <img src={coffe3} alt="" className="img-fluid" />
             </div>
             <div className="col-sm-8">
               <h3>Ian Figueroa</h3>
@@ -64,7 +70,7 @@ const aboutUs = () => {
         <div className="col">
           <div className="row align-items-center">
             <div className="col-sm-4 mb-3 mb-sm-0">
-              <img src="/Imagenes/iconofactureria.png" alt="Loki" className="img-fluid" />
+              <img src={coffe4} alt="" className="img-fluid" />
             </div>
             <div className="col-sm-8">
               <h3>Gustavo Andina</h3>
@@ -79,4 +85,4 @@ const aboutUs = () => {
 );
 };
 
-export default aboutUs;
+export default AboutUs;
