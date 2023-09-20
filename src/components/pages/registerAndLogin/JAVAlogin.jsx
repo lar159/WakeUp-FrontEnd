@@ -1,8 +1,13 @@
 const JAVAlogin = () => {
+    const [infForm, setInfForm] = useState({
+        email: "",
+        password: ""
+    })
+
     return (
         <div class="container-form sign-in">
 
-            <div class="w-25 p-4 rounded bg-dark">
+            <div class="w-25 p-4 rounded bg-marron">
                 <form id="formLogin">
                     <h2 class="text-light mb-3">Iniciar Sesion</h2>
 
@@ -33,9 +38,9 @@ const JAVAlogin = () => {
 
             <div class="welcome-back">
                 <div class="message">
-                    <h2>¡Bienvenido nuevamente!</h2>
-                    <p>Si aún no tenés una cuenta, registrate acá</p>
-                    <button class="sign-in-btn btn btn-outline-dark">Registrarse</button>
+                    <h2 className="text-dark">¡Bienvenido nuevamente!</h2>
+                    <p className="text-dark">Si aún no tenés una cuenta, registrate acá</p>
+                    <button class="sign-in-btn btn btn-primary">Registrarse</button>
                 </div>
             </div>
         </div>
