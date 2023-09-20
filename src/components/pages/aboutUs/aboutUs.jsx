@@ -1,13 +1,13 @@
 import React from "react";
-
-const App = () => {
+import cafe from "../../../assets/cafeteria.jpg"
+const aboutUs = () => {
   return (
     <>
       <section className="bg-gradient pb-5 pt-3 pt-lg-5 mb-1">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-3 mb-lg-0">
-              <img src="" className="img-fluid" alt="" />
+              <img src={cafe} className="img-fluid" alt="" />
             </div>
             <div className="col-lg-6">
               <h1 className="display-3 text-center">About Us</h1>
@@ -79,4 +79,4 @@ const App = () => {
 );
 };
 
-export default App;
+export default aboutUs;
