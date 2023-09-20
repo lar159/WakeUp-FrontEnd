@@ -61,7 +61,7 @@ function Home() {
                 friendly service staff, we all share a common commitment: making
                 your visit to WakeUp! be exceptional.
               </h6>
-              <Link className="btnhistory" href="">
+              <Link className="btnhistory" to="/aboutUs">
                 know us{" "}
               </Link>
             </div>
@@ -138,7 +138,7 @@ function Home() {
                     Try the best coffees with the same premium quality as always
                   </p>
                   <Link
-                    href="/menu"
+                    to="/menu"
                     className="btn btn-primary d-flex justify-content-center "
                   >
                     See menu
@@ -159,7 +159,7 @@ function Home() {
                     The Best fresh drinks juices and tea. Limited edition juices
                   </p>
                   <Link
-                    href="/menu"
+                    to="/menu"
                     className="btn btn-primary d-flex justify-content-center"
                   >
                     See menu
@@ -180,7 +180,7 @@ function Home() {
                     Fresh snacks of the day to accompany your drink
                   </p>
                   <Link
-                    href="/menu"
+                    to="/menu"
                     className="btn btn-primary d-flex justify-content-center"
                   >
                     {" "}

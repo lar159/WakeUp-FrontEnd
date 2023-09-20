@@ -1,12 +1,3 @@
-import { useState } from 'react';
-import "./Menu.css"
-import { Card, Button, Row, Col, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-
-
-
-
-
 
 
 const menuItems = [
@@ -61,6 +52,8 @@ function Menu() {
 
   const filteredItems = menuItems.find((category) => category.category === activeCategory)?.items;
 
+
+
   return (
     <div className="App colormenu">
       <header className="App-header">
@@ -109,8 +102,7 @@ function Menu() {
                               <p>{item.price}</p>
                             </div>
                           </div>
-                          <div className='item_op'>
-                            <select name="option" id="" className='select mt-2 m-4 '>
+
                               <option value="">Select an option</option>
                               <option value="option">1</option>
                               <option value="option">2</option>
