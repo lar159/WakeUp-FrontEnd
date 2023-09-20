@@ -21,7 +21,9 @@ function App() {
           <Route exact path="/product/orders" element={<Orders />} />
           <Route exact path="/*" element={<Error404 />} />
           <Route exact path="/menu" element={<Menu />} />
-          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/aboutUs" element={<AboutUs />} />
+          <Route exact path="/contact" element={<Contact />} />
+          
         </Routes>
         {isDashboardRoute ? <Outlet /> : <Footer />}
       </BrowserRouter>
