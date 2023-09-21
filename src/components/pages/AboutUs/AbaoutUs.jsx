@@ -1,8 +1,8 @@
 import barCoffee from "../../../assets/bar.jpg";
-import cake from "../../../assets/cake.jpg";
-import cup from "../../../assets/cup-coffee-logo.jpg";
+import cake from "../../../assets/cake.png";
+import cup from "../../../assets/cup-coffee-logo.png";
 import medialuna from "../../../assets/medialuna-logo.png";
-import bread from "../../../assets/bread-logo.jpg"
+import bread from "../../../assets/bread-logo.png"
 import "./AboutUs.css"
 
 
