@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Gupter:wght@500&display=swap');
+
+body{
+    font-family: 'Abel', sans-serif;
+}
+
+h1,h2 {
+    font-family: 'Gupter', serif;
+}
