@@ -6,6 +6,9 @@ const JAVAlogin =({eventsBtn})=> {
 
     //     const res = await instance.post("/api/login", user)
     // }
+    const handleClick = (e)=>{
+        e.preventDefault(); 
+    }
 
     return(
         <div className="container-form sign-in">
