@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Register from "./JAVAregister.jsx"
-import Login from "./JAVAlogin.jsx"
+import Register from "./JAVAregister"
+import Login from "./JAVAlogin"
 import "./CSSregLogin.css" 
 
 const JAVAregisterlogin =() => {
