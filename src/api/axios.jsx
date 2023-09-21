@@ -1,9 +1,9 @@
 import axios from "axios";
 
-// const url = import.meta.env.VITE_URL_BACKEND
-// url ? url :
+const url = import.meta.env.VITE_URL_BACKEND
+
 const instance = axios.create({
-  baseURL: 'https://localhost:3001/api',
+  baseURL: url ? url : 'https://localhost:3001/api',
   timeout: 1000,
   headers: { 'content-type': 'application/json' }
 });

@@ -1,8 +1,10 @@
-
+import instance from "../../../api/axios";
 
 const JAVAlogin =({eventsBtn})=> {
-    const handleClick = (e)=>{
-        e.preventDefault(); 
+
+    const login = async () => {
+
+        const res = await instance.post("/api/login", user)
     }
 
     return(
