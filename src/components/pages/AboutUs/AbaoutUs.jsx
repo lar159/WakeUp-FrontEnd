@@ -9,6 +9,7 @@ import "./AboutUs.css"
 const AboutUs = () => {
   return (
     <>
+    <div className="section">
       <section className="bg-gradient pb-5 pt-3 pt-lg-5 mb-1">
         <div className="container">
           <div className="row align-items-center">
@@ -26,7 +27,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-  <div className="container">
+  <div className="container section">
     <section className="mb-5">
       <h2 className="text-center mb-4">Our History</h2>
       <p lang="es">
@@ -80,6 +81,7 @@ const AboutUs = () => {
       </div>
     </section>
     <hr />
+  </div>
   </div>
 </>
 );

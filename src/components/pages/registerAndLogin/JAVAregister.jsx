@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const JAVAregister = ({eventsBtn}) => {
+const JAVAregister = ({ eventsBtn }) => {
     const [infForm, setInfForm] = useState({
         nombre: "",
         apellido: "",
@@ -10,67 +10,58 @@ const JAVAregister = ({eventsBtn}) => {
 
     const validacionEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     const [errorMessageNombre, setErrorMessageNombre] = useState()
-    const [errorMessageApellido, setErrorMessageApellido] = useState()
     const [errorMessageEmail, setErrorMessageEmail] = useState()
     const [errorMessagePassword, setErrorMessagePassword] = useState()
 
-    const handleClick = (e)=>{
+    const handleClick = (e) => {
         e.preventDefault();
 
         let validacionContrasena = ""
         let valida = true
 
-        if(infForm.nombre.length === 0){
+        if (infForm.nombre.length === 0) {
             setErrorMessageNombre("The field cannot remain empty.")
-        }else if(infForm.nombre.length > 20){
+        } else if (infForm.nombre.length > 20) {
             setErrorMessageNombre("Name too long.")
-        }else{
+        } else {
             setErrorMessageNombre("Accepted name.")
         }
-        
-        if(infForm.apellido.length === 0){
-            setErrorMessageApellido("The field cannot remain empty.")
-        }else if(infForm.apellido.length > 20){
-            setErrorMessageApellido("Last name too long.")
-        }else{
-            setErrorMessageApellido("Accepted last name")
-        }
 
-        if(infForm.email.length === 0){
+        if (infForm.email.length === 0) {
             setErrorMessageEmail("The field cannot remain empty.")
-        }else if(!validacionEmail.test(infForm.email)){
+        } else if (!validacionEmail.test(infForm.email)) {
             setErrorMessageEmail("Invalid email.")
-        }else{
+        } else {
             setErrorMessageEmail("")
         }
 
         console.log(infForm.password.length)
 
-        if(infForm.password.length === 0){
+        if (infForm.password.length === 0) {
             setErrorMessagePassword("The field cannot remain empty.")
-        }else{
-            if(infForm.password.length < 8){
+        } else {
+            if (infForm.password.length < 8) {
                 validacionContrasena += "- Must have more than 8 characters."
                 valida = false
             }
-    
-            if(!infForm.password.match(/[A-Z]/)){
+
+            if (!infForm.password.match(/[A-Z]/)) {
                 validacionContrasena += "- Must have at least one uppercase letter."
                 valida = false
             }
-    
-            if(!infForm.password.match(/[0-9]/)){
+
+            if (!infForm.password.match(/[0-9]/)) {
                 validacionContrasena += "- Must have at least one number."
                 valida = false
             }
 
-            if(valida){
+            if (valida) {
                 setErrorMessagePassword("Accepted password.")
-            }else{
+            } else {
                 setErrorMessagePassword(validacionContrasena)
             }
         }
-    } 
+    }
 
     return (
         <div className="container-form sign-up">
@@ -78,7 +69,7 @@ const JAVAregister = ({eventsBtn}) => {
                 <div className="message">
                     <h2 className="text-dark fs-2">Welcome to WakeUp!</h2>
                     <p className="text-dark fs-3"> If you already have an account, log in here.</p>
-                    <button className="sign-up-btn btn btn-primary" onClick={()=> eventsBtn()}>Sign in</button>
+                    <button className="sign-up-btn btn btn-primary" onClick={() => eventsBtn()}>Sign in</button>
                 </div>
             </div>
 
@@ -89,23 +80,15 @@ const JAVAregister = ({eventsBtn}) => {
                     <div className="row">
                         <div className="mb-3">
                             <label>Name</label>
-                            <input type="text" className="form-control" aria-describedby="Nombre" placeholder="Name(s)"  id="nombreUsuario" onChange={(e) =>  setInfForm({...infForm, nombre:e.target.value})}/>
+                            <input type="text" className="form-control" aria-describedby="Nombre" placeholder="Name(s)" id="nombreUsuario" onChange={(e) => setInfForm({ ...infForm, nombre: e.target.value })} />
                             <p className="text-warning font-monospace fs-6">{errorMessageNombre}</p>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="mb-3">
-                            <label>Last name</label>
-                            <input type="text" className="form-control" aria-describedby="Apellido" placeholder="Last name(s)" id="apellidoUsuario" onChange={(e) =>  setInfForm({...infForm, apellido:e.target.value})}/>
-                            <p className="text-warning font-monospace fs-6">{errorMessageApellido}</p>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="mb-3">
                             <label>Email adress</label>
-                            <input type="email" className="form-control" aria-describedby="Email de usuario" placeholder="User's email address" id="emailUsuario" onChange={(e) =>  setInfForm({...infForm, email:e.target.value})}/>
+                            <input type="email" className="form-control" aria-describedby="Email de usuario" placeholder="User's email address" id="emailUsuario" onChange={(e) => setInfForm({ ...infForm, email: e.target.value })} />
                             <p className="text-warning font-monospace fs-6">{errorMessageEmail}</p>
                         </div>
                     </div>
@@ -113,7 +96,7 @@ const JAVAregister = ({eventsBtn}) => {
                     <div className="row">
                         <div className="mb-3">
                             <label>Password</label>
-                            <input type="password" className="form-control" aria-describedby="Password" placeholder="Password" id="passUsuario" onChange={(e) =>  setInfForm({...infForm, password:e.target.value})}/>
+                            <input type="password" className="form-control" aria-describedby="Password" placeholder="Password" id="passUsuario" onChange={(e) => setInfForm({ ...infForm, password: e.target.value })} />
                             <p className="text-warning font-monospace fs-6">{errorMessagePassword}</p>
                         </div>
                     </div>
