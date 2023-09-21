@@ -1,17 +1,14 @@
 import './NavBar.css'
 import logoNav from "../../../assets/Screenshot_149-removebg-preview.png";
-import { AiOutlineUserAdd, AiOutlineUser } from 'react-icons/ai'
+import { AiOutlineUser } from 'react-icons/ai'
 import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-  const handleButtonClick = () => {
-
-  };
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <Link className="navbar-brand" to="/home"><img className='logoNav' src={logoNav} alt="Logo" />WakeUp!</Link>
+        <Link className="navbar-brand" to="/"><img className='logoNav' src={logoNav} alt="Logo" />WakeUp!</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -47,8 +44,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="d-flex justify-content-center align-items-center">
-            <button className="btn btn-outline mx-2 singIn" type="button" onClick={handleButtonClick}><AiOutlineUser /> Sing In</button>
-            <button className="btn btn-outline singUp" type="button" onClick={handleButtonClick}><AiOutlineUserAdd /> Sign Up</button>
+            <Link className="btn btn-outline mx-2 singIn"  to="/login"><AiOutlineUser className='mb-1' /> Access </Link>
           </div>
         </div>
       </div>

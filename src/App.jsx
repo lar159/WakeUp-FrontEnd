@@ -7,10 +7,14 @@ import Orders from "./components/pages/Orders/Orders"
 import Error404 from "./components/pages/Error404/Error404";
 import Menu from "./components/pages/Menu/Menu";
 import Dashboard from "./components/pages/AdminDashboard/Dashboard";
+import Login from "./components/pages/registerAndLogin/JAVAregisterlogin"
+import AboutUs from "./components/pages/AboutUs/AbaoutUs";
+import Contact from "./components/pages/Contact/Contact";
 
 
 function App() {
   const isDashboardRoute = window.location.pathname.startsWith("/dashboard");
+  
 
   return (
     <>
@@ -19,9 +23,12 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/product/orders" element={<Orders />} />
-          <Route exact path="/*" element={<Error404 />} />
           <Route exact path="/menu" element={<Menu />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/aboutUs" element={<AboutUs />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/*" element={<Error404 />} />
         </Routes>
         {isDashboardRoute ? <Outlet /> : <Footer />}
       </BrowserRouter>

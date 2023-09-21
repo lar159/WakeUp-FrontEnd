@@ -25,18 +25,15 @@ const Footer = () => {
             <hr className="w-100 clearfix d-md-none" />
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 className="text-uppercase mb-3 font-weight-bold ">Products</h6>
+              <h6 className="text-uppercase mb-3 font-weight-bold ">Menús</h6>
               <p>
-                <Link className="text-black text-decoration-none">Coffe</Link>
+                <Link className="text-black text-decoration-none" to="/menu">Cold Drinks</Link>
               </p>
               <p>
-                <Link className="text-black text-decoration-none">Croassaints</Link>
+                <Link className="text-black text-decoration-none" to="/menu">Hot Drinks</Link>
               </p>
               <p>
-                <Link className="text-black text-decoration-none">Cakes</Link>
-              </p>
-              <p>
-                <Link className="text-black text-decoration-none">Sandwiches</Link>
+                <Link className="text-black text-decoration-none" to="/menu">Bakery</Link>
               </p>
             </div>
 
@@ -44,19 +41,19 @@ const Footer = () => {
 
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase mb-3 font-weight-bold">
-                Creators
+                GitHub Creators
               </h6>
               <p>
-                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Agus Dominguez</Link>
+                <Link className="text-black text-decoration-none" to="https://github.com/AgusDomz"><AiOutlineHeart /> Agus Dominguez</Link>
               </p>
               <p>
-                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Lu Rivadeneira</Link>
+                <Link className="text-black text-decoration-none" to="https://github.com/lar159"><AiOutlineHeart /> Lu Rivadeneira</Link>
               </p>
               <p>
-                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Ian Figueroa</Link>
+                <Link className="text-black text-decoration-none" to="https://github.com/ianfigueroa01"><AiOutlineHeart /> Ian Figueroa</Link>
               </p>
               <p>
-                <Link className="text-black text-decoration-none"><AiOutlineHeart /> Gus Andina</Link>
+                <Link className="text-black text-decoration-none" to="https://github.com/Flequex"><AiOutlineHeart /> Gus Andina</Link>
               </p>
             </div>
 
@@ -88,6 +85,7 @@ const Footer = () => {
               <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
+                to="https://www.facebook.com/"
               >
                 <FaFacebookF />
               </Link>
@@ -95,6 +93,7 @@ const Footer = () => {
               <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
+                to="https://twitter.com/"
               >
                 <FaXTwitter />
               </Link>
@@ -102,6 +101,7 @@ const Footer = () => {
               <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
+                to="https://www.google.com.ar/"
               >
                 <FaGoogle />
               </Link>
@@ -109,18 +109,21 @@ const Footer = () => {
               <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
+                to="https://www.instagram.com/"
               >
                 <FaInstagram />
               </Link>
               <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
+                to="https://www.linkedin.com/"
               >
                 <FaLinkedinIn />
               </Link>
               <Link
                 className="btn btn-outline-dark m-1 rounded-circle"
                 role="button"
+                to="https://github.com/lar159/WakeUp-FrontEnd"
               >
                 <FiGithub />
               </Link>
