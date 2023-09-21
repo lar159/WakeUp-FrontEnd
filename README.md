@@ -14,6 +14,7 @@ It needs to be installed
 
 - Node js
 
+
 ## Built with
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -61,18 +62,6 @@ http://localhost:5174/
 - Error
 
 
-
-## Running Tests
-
-
-To run tests, run the following command
-
-```bash
-  npm run test
-```
-
-
-<<<<<<< develop
 ## Deployment  :link:	
 
 To deploy this project run
@@ -96,12 +85,6 @@ To run tests, run the following command
   npm run test
 ```
 
-
-## Support :mechanic:	
-
-For support, email fake@fake.com or join our Slack channel.
-
-
 ## Important! :construction:	
 
 We are preparing the page for better accessibility. sorry for the inconvenience. 
@@ -109,11 +92,9 @@ We are preparing the page for better accessibility. sorry for the inconvenience.
 
 ## Feedback  :tada:
 
-If you have any feedback, please reach out to us at 
-luu.rivadeneira@gmail.com
-agusdominguez@gmail.com
-gustavo_andina@hotmail.com
-figueroa.ian13@gmail.com
+If you have any feedback, please reach out to us at.
+
+helloworld.company23@gmail.com
 
 
 ![Logo](/src/assets/Black%20and%20White%20Monochrome%20Tech%20Logo.png)
