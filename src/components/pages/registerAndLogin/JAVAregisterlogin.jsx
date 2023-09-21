@@ -3,9 +3,8 @@ import Register from "./JAVAregister.jsx"
 import Login from "./JAVAlogin.jsx"
 import "./CSSregLogin.css" 
 
-const JAVAregisterlogin =(events) => {
+const JAVAregisterlogin =() => {
     const [registerOrLogin, setRegisterOrLogin] = useState(false)
-    // console.log(events)
 
     const eventsBtn =()=> {
 

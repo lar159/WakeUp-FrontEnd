@@ -49,7 +49,7 @@ function MenuTable() {
         console.error(error);
       });
   };
-  
+
   const handleUpdateMenu = (values) => {
     axios
       .put(`http://localhost:3001/api/menu/${editingMenu._id}`, values)
@@ -282,9 +282,8 @@ function MenuTable() {
                     <Form.Check
                       type="switch"
                       id="custom-switch-state"
-                      label={`Product status: ${
-                        values.state ? "in-stock" : "out-stock"
-                      }`}
+                      label={`Product status: ${values.state ? "in-stock" : "out-stock"
+                        }`}
                       name="state"
                       checked={values.state}
                       onChange={handleChange}

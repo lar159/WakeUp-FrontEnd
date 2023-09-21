@@ -4,7 +4,7 @@ import "./Error404.css";
 const Error404 = () => {
   return (
     <>
-      <div>
+      <div className="bg-white">
         <div className="main">
           <svg
             xmlns="http://www.w3.org/2000/svg"

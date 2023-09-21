@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 
 const JAVAlogin =({eventsBtn})=> {
     const handleClick = (e)=>{
@@ -40,8 +40,8 @@ const JAVAlogin =({eventsBtn})=> {
             <div className="welcome-back">
                 <div className="message">
                     <h2 className="text-dark fs-2">Welcome to WakeUp!</h2>
-                    <p className="text-dark fs-3">If you don't have an account yet, register here.</p>
-                    <button className="sign-in-btn btn btn-primary" onClick={()=> eventsBtn()}>Sign up</button>
+                    <p className="text-dark fs-3">If you don`t have an account yet, register here.</p>
+                    <button className="sign-in-btn btn btn-primary" onClick={()=> eventsBtn()}>Register</button>
                 </div>
             </div>
         </div>
