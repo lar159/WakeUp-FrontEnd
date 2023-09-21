@@ -13,7 +13,7 @@ const AboutUs = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-3 mb-lg-0">
-              <img src={barCoffee} alt="" />
+              <img src={barCoffee} alt="img" className="img-fluid imgabouts-us"/>
             </div>
             <div className="col-lg-6">
               <h1 className="display-3 text-center">About Us</h1>

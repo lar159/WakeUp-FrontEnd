@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./Menu.css";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
+
+
 
 const menuItems = [
   {
@@ -10,38 +13,32 @@ const menuItems = [
       {
         name: "Iced Latte",
         price: "$3.99",
-        image:
-          "https://png.pngtree.com/png-clipart/20190515/original/pngtree-tea-mixed-with-whipped-cream-ice-coffee-in-a-jar-png-image_3687695.jpg",
+        image:"https://dwellbymichelle.com/wp-content/uploads/2020/06/DWELL-Iced-Cold-Brew-Latte-e1592262551330.jpg",
       },
       {
         name: "Cold Brew",
         price: "$5.49",
-        image:
-          "https://png.pngtree.com/png-clipart/20201209/original/pngtree-cold-brew-coffee-png-image_5639618.jpg",
+        image:"https://www.bowlofdelicious.com/wp-content/uploads/2015/06/Milk-and-Honey-Cold-Brew-Coffee-SQUARE.jpg",
       },
       {
         name: "Iced Coffee",
         price: "$4.49",
-        image:
-          "https://static.vecteezy.com/system/resources/previews/011/048/029/non_2x/iced-coffee-watercolor-set-free-png.png",
+        image:"https://www.cookingclassy.com/wp-content/uploads/2022/07/iced-coffee-05.jpg",
       },
       {
         name: "Iced Tea",
         price: "$3.99",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/NCI_iced_tea.jpg/240px-NCI_iced_tea.jpg",
+        image:"https://www.thedinnerbite.com/wp-content/uploads/2021/05/iced-tea-recipe-img-4.jpg",
       },
       {
         name: "Milshake",
         price: "$2.49",
-        image:
-          "https://as2.ftcdn.net/v2/jpg/05/83/27/97/1000_F_583279705_3ApajXiewkJCWg2cysoDrAJHZqAwjT1t.jpg",
+        image:"https://houseofnasheats.com/wp-content/uploads/2023/01/Oreo-Milkshake-Square-1.jpg",
       },
       {
         name: "Juice",
         price: "$6.49",
-        image:
-          "https://img2.freepng.es/20180329/foe/kisspng-orange-juice-cocktail-milkshake-smoothie-smoothie-5abd9b4618add2.7665233915223754941011.jpg",
+        image:"https://cdn-3.expansion.mx/dims4/default/b767e1f/2147483647/strip/true/crop/732x384+0+43/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F76%2Fbc%2F5ea06e1c41dab8c510b3c8370d39%2Fistock-654357990.jpg",
       },
     ],
   },
@@ -51,37 +48,32 @@ const menuItems = [
       {
         name: "Espresso",
         price: "$2.49",
-        image: "https://p7.hiclipart.com/preview/687/80/14/5be213583b93e.jpg",
+        image: "https://deultimominuto.net/wp-content/uploads/2022/11/espresso.webp",
       },
       {
         name: "Cappuccino",
         price: "$3.29",
-        image:
-          "https://exigibuencafe.com/wp-content/uploads/2017/12/exigi-5-1000x600.jpg",
+        image:"https://exigibuencafe.com/wp-content/uploads/2017/12/exigi-5-1000x600.jpg",
       },
       {
         name: "Hot chocolate",
         price: "$5.29",
-        image:
-          "https://react-coffee-shop.vercel.app/_next/image?url=%2FdrinkImages%2Fcappuccino.jpg&w=828&q=80",
+        image:"https://react-coffee-shop.vercel.app/_next/image?url=%2FdrinkImages%2Fcappuccino.jpg&w=828&q=80",
       },
       {
         name: "Macchiato",
         price: "$3.29",
-        image:
-          "https://www.notmilk.coffee/static/439fdf15b8ffe649cea39615c6da6eaa/1ca08/caramel-macchiato-2.jpg",
+        image:"https://www.notmilk.coffee/static/439fdf15b8ffe649cea39615c6da6eaa/1ca08/caramel-macchiato-2.jpg",
       },
       {
         name: "Green Tea",
         price: "$4.29",
-        image:
-          "https://i.mscwlns.co/mosaic-wellness/image/upload/f_auto,w_1000,c_limit/v1622023871/BW%20BLOG/gbvuyllkvpagcsgvj7ea.jpg",
+        image:"https://i.mscwlns.co/mosaic-wellness/image/upload/f_auto,w_1000,c_limit/v1622023871/BW%20BLOG/gbvuyllkvpagcsgvj7ea.jpg",
       },
       {
         name: "Red Tea",
         price: "$3.29",
-        image:
-          "https://s2.abcstatics.com/media/gurme/2023/05/17/s/frutos-rojos1-ksv--1200x630@abc.jpg",
+        image:"https://s2.abcstatics.com/media/gurme/2023/05/17/s/frutos-rojos1-ksv--1200x630@abc.jpg",
       },
     ],
   },
@@ -91,38 +83,36 @@ const menuItems = [
       {
         name: "Croissant",
         price: "$2.49",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOIX0ca-ponu2b2E7_pVrC-l5s86FrOGnOqx5G7Sg54grM6Q_QRSOQsVvTQFZNAbarW5U&usqp=CAU",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu5oXdkdNijKa4Iyhv87Wlh7T5bRfgyuRQgw&usqp=CAU",
+        
       },
       {
         name: "Muffin",
         price: "$3.29",
-        image:
-          "https://w7.pngwing.com/pngs/142/508/png-transparent-muffins-with-chocolate-toppings-muffin-bakery-chocolate-cake-chocolate-brownie-banana-bread-muffin-baked-goods-food-baking-thumbnail.png",
+        image:"https://www.demoslavueltaaldia.com/sites/default/files/muffin-de-chocolate-y-cafe.jpg.jpg",
+        
+
+        
       },
       {
         name: "Cupcake",
         price: "$5.29",
-        image:
-          "https://www.recipetineats.com/wp-content/uploads/2020/09/Vanilla-Cupcakes-with-Vanilla-Swiss-Meringue-SQ.jpg",
+        image:"https://www.recipetineats.com/wp-content/uploads/2020/09/Vanilla-Cupcakes-with-Vanilla-Swiss-Meringue-SQ.jpg",
       },
       {
         name: "Lemon Pie",
         price: "$3.29",
-        image:
-          "https://www.elfondodelacazuela.com.ar/wp-content/uploads/2022/06/lemon-pie.jpg",
+        image:"https://www.elfondodelacazuela.com.ar/wp-content/uploads/2022/06/lemon-pie.jpg",
       },
       {
         name: "Pancakes",
         price: "$2.29",
-        image:
-          "https://lilluna.com/wp-content/uploads/2022/09/easy-pancakes3-resize-10.jpg",
+        image:"https://lilluna.com/wp-content/uploads/2022/09/easy-pancakes3-resize-10.jpg",
       },
       {
         name: "Brownie",
         price: "$5.29",
-        image:
-          "https://www.pequerecetas.com/wp-content/uploads/2018/09/brownie-de-chocolate-receta.jpg",
+        image:"https://www.pequerecetas.com/wp-content/uploads/2018/09/brownie-de-chocolate-receta.jpg",
       },
     ],
   },
@@ -143,6 +133,13 @@ function Menu() {
     (category) => category.category === activeCategory
   )?.items;
 
+  const handleOpenCart = () => {
+    if (cart.length === 0) {
+      alert("El carrito está vacío. Agregue productos para continuar.");
+    } else {
+      history.push("/product/orders");
+    }
+  };
 
 
   return (
@@ -152,12 +149,13 @@ function Menu() {
         <Row>
           <Col>
             <div className=" d-flex justify-content-center ">
-              <ul className="d-flex mb-4 text-center">
+              <ul className="d-flex mb-3 text-center">
+                <Row>
                 {menuItems.map((category, index) => (
-                  <li key={index}>
+                  <li key={index} >
                     <Button
                       href="#"
-                      className={`nav-link btn-cust ${activeCategory === category.category ? "active" : ""
+                      className={`nav-link btn btn-light d-flex p-2 btncuston ${activeCategory === category.category ? "active" : ""
                         }`}
                       onClick={() => handleCategoryClick(category.category)}
                     >
@@ -165,6 +163,7 @@ function Menu() {
                     </Button>
                   </li>
                 ))}
+                </Row>
               </ul>
             </div>
           </Col>
@@ -173,8 +172,8 @@ function Menu() {
       <main className="main_">
         <section className="editsection">
           <Container>
-            <div className="card">
-              <Card className="tarjeta p-5 mb-0">
+            <div className="card mb-0">
+              <Card className="tarjeta p-5 mb-0 mycard">
                 <h2>{activeCategory}</h2>
                 <ul className="menu-list p-3">
                   {filteredItems &&
@@ -199,7 +198,6 @@ function Menu() {
                               name="option"
                               id=""
                               className="select mt-2 m-4 "
-
                             >
                               <option value="">Select an option</option>
                               <option value="option">1</option>
@@ -225,9 +223,9 @@ function Menu() {
               </Card>
             </div>
           </Container>
-          <Link to="/product/orders">
-            <div className="boton-carrito">
-              <i className="fas fa-shopping-cart"> Order</i>
+          <Link >
+            <div className="boton-carrito" onClick={handleOpenCart}>
+              <FaShoppingCart size={30} /> 
               <span className="contador">{cart.length}</span>
             </div>
           </Link>
