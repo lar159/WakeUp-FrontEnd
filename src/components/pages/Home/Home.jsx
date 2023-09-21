@@ -11,6 +11,8 @@ import { BiDownArrow } from "react-icons/bi"
 import "./Home.css";
 
 function Home() {
+  
+
   return (
     <div>
       <div className="principal">
@@ -26,9 +28,7 @@ function Home() {
               offset={-70}
               duration={500}
               id="scrollButton"
-              className="chevron p-2 rounded"
-
-            >
+              className="chevron p-2 rounded">
               <BiDownArrow color="white"/>
             </Link>
           </Col>
@@ -51,8 +51,8 @@ function Home() {
                 friendly service staff, we all share a common commitment: making
                 your visit to WakeUp! be exceptional.
               </h6>
-              <Link className="btn btn-darnger" to="/aboutUs">
-                Know Us
+              <Link className="btn " to="/aboutUs">
+                Get to know us
               </Link>
                 
             </div>

@@ -2,10 +2,10 @@ import instance from "../../../api/axios";
 
 const JAVAlogin =({eventsBtn})=> {
 
-    const login = async () => {
+    // const login = async () => {
 
-        const res = await instance.post("/api/login", user)
-    }
+    //     const res = await instance.post("/api/login", user)
+    // }
 
     return(
         <div className="container-form sign-in">
