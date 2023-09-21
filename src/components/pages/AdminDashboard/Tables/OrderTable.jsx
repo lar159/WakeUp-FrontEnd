@@ -6,7 +6,6 @@ function OrdersTable() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    // Llama a tu endpoint de API para obtener todas las órdenes
     axios
       .get("http://localhost:3001/api/orders")
       .then((response) => {
@@ -18,7 +17,6 @@ function OrdersTable() {
   }, []);
 
   const handleEditStatus = (orderId, newStatus) => {
-    // Llama a tu endpoint de API para actualizar el estado de la orden
     axios
       .put(`http://localhost:3001/api/orders/${orderId}`, { state: newStatus })
       .then(() => {
@@ -50,8 +48,8 @@ function OrdersTable() {
           {orders.map((order) => (
             <tr key={order._id}>
               <td>{order._id}</td>
-              <td>{order.user._id}</td> {/* Suponiendo que tienes el nombre del usuario en la propiedad 'name' */}
-              <td>{order.menu._id}</td> {/* Suponiendo que tienes el nombre del menú en la propiedad 'name' */}
+              <td>{order.user._id}</td> 
+              <td>{order.menu._id}</td> 
               <td>{order.state}</td>
               <td>
                 <Button
@@ -66,7 +64,6 @@ function OrdersTable() {
                 >
                   Mark as Pending
                 </Button>
-                {/* Puedes agregar más botones según tus necesidades para cambiar el estado */}
               </td>
             </tr>
           ))}
