@@ -153,7 +153,7 @@ function UserTable() {
               name: "",
               email: "",
               role: "",
-              state: true, // Valor predeterminado para el estado
+              state: true, 
             }}
             validationSchema={validationSchema}
             onSubmit={(values) => {
