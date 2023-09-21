@@ -7,7 +7,7 @@ import Orders from "./components/pages/Orders/Orders"
 import Error404 from "./components/pages/Error404/Error404";
 import Menu from "./components/pages/Menu/Menu";
 import Dashboard from "./components/pages/AdminDashboard/Dashboard";
-import Login from "./components/pages/RegisterAndLogin/JAVAregisterlogin"
+import Login from "./components/pages/registerAndLogin/JAVAregisterlogin";
 import AboutUs from "./components/pages/AboutUs/AbaoutUs";
 import Contact from "./components/pages/Contact/Contact";
 import "./App.css"
